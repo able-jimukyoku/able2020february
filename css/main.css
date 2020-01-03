@@ -12,11 +12,11 @@
 
   /* SMALL FONT SIZE */
   --p-nano-size: calc(0.2cm + (0.5vw - 0.3vmin));
-  --p-s-size: calc(0.4cm + (0.5vw - 0.3vmin));
-  --p-m-size: calc(0.5cm + (0.5vw - 0.3vmin));
-  --h3-size: calc(0.6cm + (0.5vw - 0.3vmin));
-  --h2-size: calc(0.6cm + (0.5vw - 0.3vmin));
-  --h1-size: calc(0.6cm + (0.8vw - 0.8vmin));
+  --p-s-size: calc(0.3cm + (0.5vw - 0.3vmin));
+  --p-m-size: calc(0.4cm + (0.5vw - 0.3vmin));
+  --h3-size: calc(0.5cm + (0.5vw - 0.3vmin));
+  --h2-size: calc(0.5cm + (0.5vw - 0.3vmin));
+  --h1-size: calc(0.5cm + (0.8vw - 0.8vmin));
 }
 
 /* BODY */
@@ -31,6 +31,17 @@ body {
   box-sizing: border-box;
   -webkit-text-size-adjust: 100%;
   text-size-adjust:100;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body::scrollbar {
+  display: none;
 }
 
 /* FONT */
@@ -565,7 +576,7 @@ a {
   height: 100vh;
   background-color: var(--main-color);
   grid-template-rows: calc(1.5cm + 3vmax - 3vw) 7vmin 75vmin 1fr;
-  grid-template-columns: calc((100vw - 100vmin) / 2) 5vw 1fr 5vw calc((100vw - 100vmin) / 2);
+  grid-template-columns: calc((70vw - 70vmin) / 2) 5vw 1fr 5vw calc((70vw - 70vmin) / 2);
   color: var(--accent-01-color);
 }
 
@@ -582,9 +593,9 @@ a {
 
 .page-speakers {
   width: 100vw;
-  height: calc(300vh - 200vmin);
+  height: calc(250vh - 150vmin);
   grid-template-rows: calc(1.5cm + 3vmax - 3vw) 7vmin 1fr 0.2cm;
-  grid-template-columns: calc((100vw - 100vmin) / 2) 5vw 1fr 5vw calc((100vw - 100vmin) / 2);
+  grid-template-columns: calc((70vw - 70vmin) / 2) 5vw 1fr 5vw calc((70vw - 70vmin) / 2);
 }
 
 .page-speakers>.page-speakers-title {
@@ -610,11 +621,12 @@ a {
   overflow: auto;
   min-width: 0;
   border-radius: 0.5cm;
+  height: calc(var(--p-m-size)*4+128px);
 }
 
 .page-speakers-speaker>.page-speakers-speaker-image {
   border-radius: 50%;
-  margin: var(--p-m-size);
+  margin: calc(var(--p-m-size)*0.5);
 }
 
 .page-speakers-speaker>.page-speakers-speaker-name {
@@ -641,7 +653,7 @@ a {
   width: 100vw;
   height: calc(300vh - 200vmin);
   grid-template-rows: calc(1.5cm + 3vmax - 3vw) 7vmin 1fr 0.2cm;
-  grid-template-columns: calc((100vw - 100vmin) / 2) 5vw 1fr 5vw calc((100vw - 100vmin) / 2);
+  grid-template-columns: calc((70vw - 70vmin) / 2) 5vw 1fr 5vw calc((70vw - 70vmin) / 2);
   background-color: var(--accent-02-color);
 }
 
@@ -771,7 +783,7 @@ tr {
   width: 100vw;
   height: 100vmin;
   grid-template-rows: calc(1.5cm + 3vmax - 3vw) 7vmin 7vmin 20vmin 7vmin 7vmin 7vmin 1fr;
-  grid-template-columns: calc((100vw - 100vmin) / 2) 5vw 1fr 5vw calc((100vw - 100vmin) / 2);
+  grid-template-columns: calc((70vw - 70vmin) / 2) 5vw 1fr 5vw calc((70vw - 70vmin) / 2);
   color: var(--accent-01-color);
 }
 
@@ -809,7 +821,7 @@ tr {
   height: 100vmin;
   background-color: var(--accent-03-color);
   grid-template-rows: calc(1.5cm + 3vmax - 3vw) 1fr 7vmin 7vmin 1.5cm 1fr 1.5cm;
-  grid-template-columns: calc((100vw - 100vmin) / 2) 5vw 1fr 5vw calc((100vw - 100vmin) / 2);
+  grid-template-columns: calc((70vw - 70vmin) / 2) 5vw 1fr 5vw calc((70vw - 70vmin) / 2);
 }
 
 .page-contact>.page-contact-title {

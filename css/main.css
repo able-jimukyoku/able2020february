@@ -29,6 +29,8 @@ body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust:100;
 }
 
 /* FONT */
@@ -224,7 +226,7 @@ a {
   padding: 0;
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: 1.5cm 1fr calc(var(--p-s-size)*6);
+  grid-template-columns: 1.5cm 1fr calc(var(--p-s-size)*5);
   box-shadow: 0 1px 3px 1px var(--accent-01-color);
 }
 
@@ -560,7 +562,7 @@ a {
 
 .page-concept {
   width: 100vw;
-  height: calc(70vh + 30vmin);
+  height: 100vh;
   background-color: var(--main-color);
   grid-template-rows: calc(1.5cm + 3vmax - 3vw) 7vmin 75vmin 1fr;
   grid-template-columns: calc((100vw - 100vmin) / 2) 5vw 1fr 5vw calc((100vw - 100vmin) / 2);
@@ -580,7 +582,7 @@ a {
 
 .page-speakers {
   width: 100vw;
-  height: calc(250vh - 150vmin);
+  height: calc(300vh - 200vmin);
   grid-template-rows: calc(1.5cm + 3vmax - 3vw) 7vmin 1fr 0.2cm;
   grid-template-columns: calc((100vw - 100vmin) / 2) 5vw 1fr 5vw calc((100vw - 100vmin) / 2);
 }
@@ -607,7 +609,7 @@ a {
   text-align: center;
   overflow: auto;
   min-width: 0;
-  border-radius: 10%;
+  border-radius: 0.5cm;
 }
 
 .page-speakers-speaker>.page-speakers-speaker-image {
@@ -637,7 +639,7 @@ a {
 
 .page-program {
   width: 100vw;
-  height: calc(200vh - 100vmin);
+  height: calc(300vh - 200vmin);
   grid-template-rows: calc(1.5cm + 3vmax - 3vw) 7vmin 1fr 0.2cm;
   grid-template-columns: calc((100vw - 100vmin) / 2) 5vw 1fr 5vw calc((100vw - 100vmin) / 2);
   background-color: var(--accent-02-color);

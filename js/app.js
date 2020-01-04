@@ -93,4 +93,3 @@ conceptNavigateButton.addEventListener('click', () => {
   closeNavigatorAndMask();
 });
 
-

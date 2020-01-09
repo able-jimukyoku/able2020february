@@ -8,12 +8,12 @@
   --accent-02-color: #FFB2D8;
   --accent-03-color: #FFF462;
   /* SMALL FONT SIZE */
-  --p-nano-size: calc(9px + 0.3vh - 0.3vmin);
-  --p-s-size: calc(12px + 0.3vh - 0.3vmin);
+  --p-nano-size: calc(10px + 0.3vh - 0.3vmin);
+  --p-s-size: calc(16px + 0.3vh - 0.3vmin);
   --p-m-size: calc(14px + 0.3vh - 0.3vmin);
-  --h3-size: calc(18px + 0.3vh - 0.3vmin);
-  --h2-size: calc(18px + 0.3vh - 0.3vmin);
-  --h1-size: calc(18px + 0.3vh - 0.3vmin);
+  --h3-size: calc(20px + 0.3vh - 0.3vmin);
+  --h2-size: calc(20px + 0.3vh - 0.3vmin);
+  --h1-size: calc(20px + 0.3vh - 0.3vmin);
 
   /* ELEMENT SIZE */
   --header-height: 40px;

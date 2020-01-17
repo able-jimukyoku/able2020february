@@ -22,13 +22,13 @@
   <body>
     <div class="header">
       <a id="navigatorOpenButton" class="btn btn-accent-01 btn-square header-btn-navigator" href="javascript:void(0);"></a>
-      <a href="https://cogpsy.sfc.keio.ac.jp/able/" class="header-title">ABLE2020 February</a>
+      <a href="javascript:void(0);" id="headerBrandLink" class="header-title">ABLE2020 February</a>
       <a class="btn btn-accent-01-inv header-btn-participate" href="https://forms.gle/FhJjgKJ2xKzzm8yz6" target="_blank"><p class="mini-p">参加申込</p></a>
     </div>
     <div id="screenMask" class="mask"></div>
     <div id="siteNavigator" class="navigator">
       <div class="title-navigator">
-        <p class="mini-p">ABLE 2020 February<br/><br/>フィンランドの<br/>幼児教育</p>
+        <a href="javascript:void(0);" id="navigatorBrandLink" class="title-navigator-link mini-p">ABLE 2020 February<br/><br/>フィンランドの<br/>幼児教育</a>
       </div>
       <a href="javascript:void(0);" id="conceptNavigateButton" class="btn btn-accent-01-inv btn-navigator"><p class="mini-p">コンセプト</p></a>
       <a href="javascript:void(0);" id="speakersNavigateButton" class="btn btn-accent-01-inv btn-navigator"><p class="mini-p">ゲスト・登壇者</p></a>
@@ -36,7 +36,121 @@
       <a href="javascript:void(0);" id="organizerNavigateButton" class="btn btn-accent-01-inv btn-navigator"><p class="mini-p">主催・特別協力</p></a>
       <a href="https://forms.gle/FhJjgKJ2xKzzm8yz6" class="btn btn-accent-01-inv btn-navigator" target="_blank"><p class="mini-p">参加申込</p></a>
     </div>
-    <div class="page page-top">
+    <div id="speaker01Dialog" class="dialog dialog-accent-02 dialog-speaker dialog-hidden">
+      <div class="dialog-speaker-title">
+        <img class="dialog-speaker-image" src="img/page-speakers-image-silven.jpg" alt="silven">
+        <h3 class="dialog-speaker-name">マアリット・シルベン</h3>
+        <p class="dialog-speaker-title">トゥルク大学教授</p>
+      </div>
+      <div class="dialog-speaker-content">
+        <p class="dialog-speaker-content-title">
+        プロフィール
+        </p>
+        <hr>
+        <p class="mini-p dialog-speaker-content-sentence">
+        ヘルシンキに生まれ、１９５０年代にスイスに移住、６０年代にはスウェーデンに移住し、１０代半ばにフィンランドに戻る。この子ども時代に様々な国で暮らした経験と教育がその後の人生に大きな影響を与え、幼児教育を専門にする契機となった。心理学と教育学を専門とする。２００７年にトゥルク大学で教職につき、2011年より教師教育学部の幼児教育講座の教授となる。幼児期の家庭における経験と幼児教育が後の認知発達と学業にどのような影響を与えるかという問題に複数の学問分野の手法を用いて取り組んでいる。乳児期から就学前までの期間の子どもの発達過程を縦断的に調査するプロジェクトを統括してきた。現在は、フィンランドの７つの大学と協働して、幼稚園教諭の資質と情報テクノロジーの知識スキルを向上のために、幼稚園教諭の教育プログラムを改訂し、ウェッブベースできょいくプログラムを提供するプロジェクトを行っている。
+        </p>
+        <p class="dialog-speaker-content-title">
+        トーク概要
+        </p>
+        <hr>
+        <p class="mini-p dialog-speaker-content-sentence">
+        フィンランドではすべての子どもはECEC (Early Childhood Education and Care――幼児の教育と保育)プログラムを享受する権利がある。ECECは、フィンランドの教育・文化省の監督下におかれており、子どもが幸せで、バランスの取れたよい発達をし、遊びやアート、工作、運動などの活動から学ぶことを支援する。本講演では、ECECのカリキュラムを紹介するとともに、フィンランドのすべてのデイケア（保育園）で、地域差がなく、等しく高水準のECECを提供するための国の定めてカリキュラムと教育と保育を担当する教師・保育士の育成の仕組みについて紹介する。
+        </p>
+      </div>
+      <div class="dialog-speaker-buttonarea">
+        <a class="btn btn-main-inv btn-close" id="closeDialog01Button" href="javascript:void(0);"><p>閉じる</p></a>
+      </div>
+    </div>
+    <div id="speaker02Dialog" class="dialog dialog-speaker dialog-accent-03 dialog-hidden">
+      <div class="dialog-speaker-title">
+        <img class="dialog-speaker-image" src="img/page-speakers-image-uchida.jpg" alt="uchida">
+        <h3 class="dialog-speaker-name">内田伸子</h3>
+        <p class="dialog-speaker-title">IPU・環太平洋大学教授</p>
+      </div>
+      <div class="dialog-speaker-content">
+        <p class="dialog-speaker-content-title">
+        プロフィール
+        </p>
+        <hr>
+        <p class="mini-p dialog-speaker-content-sentence">
+【現職】　IPU・環太平洋大学教授，お茶の水女子大学名誉教授,　学術博士.<br/>
+【専門分野】発達心理学，認知科学，保育学.<br/>
+【主要著書】『まごころの保育―堀合文子のことばと実践に学ぶ―』（小学館,1998）,<br/>
+『発達心理学―ことばの獲得と教育』（岩波書店,1999）,<br/>
+『世界の子育て格差―貧困は超えられるか』（共編著,金子書房,2012）<br/>
+『発達の心理―ことばの獲得と学び』（サイエンス社,2017）,
+『子どもの見ている世界―誕生から6歳までの「子育て・親育ち」』（春秋社,2017）ほか多数．<br/>
+【受賞歴】城戸奨励賞（日本教育心理学会,1978），読書科学研究奨励賞（日本読書学会,1980），読書科学賞（日本読書学会,2000），磁気共鳴医学会優秀論文賞（日本磁気共鳴医学会,2006），国際賞功労賞（日本心理学会,2016年），文化庁長官表彰（文化庁,2019年）<br/>
+【社会活動】NHK「おかあさんといっしょ」の番組開発・コメンテーター,ベネッセの子どもチャレンジの監修，しまじろうパペットの開発，創造性開発の知育玩具「エポンテ」シャチハタとの共同開発（「日本おもちゃ協会」知育玩具部門優秀賞,2015年）.
+        </p>
+      </div>
+      <div class="dialog-speaker-buttonarea">
+        <a class="btn btn-main-inv btn-close" id="closeDialog02Button" href="javascript:void(0);"><p>閉じる</p></a>
+      </div>
+    </div>
+    <div id="speaker03Dialog" class="dialog dialog-speaker dialog-accent-02 dialog-hidden">
+      <div class="dialog-speaker-title">
+        <img class="dialog-speaker-image" src="img/page-speakers-image-saalbach.jpg" alt="saalbach">
+        <h3 class="dialog-speaker-name">ヘンリク・ザールバッハ</h3>
+        <p class="dialog-speaker-title">ライプチヒ大学教授</p>
+      </div>
+      <div class="dialog-speaker-content">
+        <p class="dialog-speaker-content-title">
+        プロフィール
+        </p>
+        <hr>
+        <p class="mini-p dialog-speaker-content-sentence">
+        ２００６年にベルリン工科大学より認知心理学の博士号取得後、スイスのETHチューリッヒで講師を務め、その後ドイツザールランド大学の教授に就任。2015年より現職のライプチヒ大学に、教育心理学の教授となる。（１）言語と思考の関係　（２）認知発達における言語の役割（３）学習能力と言語能力の関係を中心に研究している。詳しい経歴や業績は<a target="_blank" href="http://home.uni-leipzig.de/~paedpsy/personen/prof-dr-henrik-saalbach/prof-dr-henrik-saalbach-english/">こちら</a>
+        </p>
+      </div>
+      <div class="dialog-speaker-buttonarea">
+        <a class="btn btn-main-inv btn-close" id="closeDialog03Button" href="javascript:void(0);"><p>閉じる</p></a>
+      </div>
+    </div>
+    <div id="speaker04Dialog" class="dialog dialog-speaker dialog-accent-03 dialog-hidden">
+      <div class="dialog-speaker-title">
+        <img class="dialog-speaker-image" src="img/page-speakers-image-imai.jpg" alt="imai">
+        <h3 class="dialog-speaker-name">今井むつみ</h3>
+        <p class="dialog-speaker-title">慶應義塾大学教授</p>
+      </div>
+      <div class="dialog-speaker-content">
+        <p class="dialog-speaker-content-title">
+        プロフィール
+        </p>
+        <hr>
+        <p class="mini-p dialog-speaker-content-sentence">
+        1989年慶応義塾大学大学院博士課程単位取得退学。1994年ノースウェスタン大学心理学部Ph.D.取得。専門は認知心理学、発達心理学、言語心理学。幼児の言語や概念の発達、認知科学の立場から学びの仕組みを明らかにする研究を行っている。数多くの学術論文を国際誌に発表し、Cognitive Science Society（国際認知科学会）のFellow, Governing Board Memberに選出されている。『ことばと思考』（岩波新書）、『ことばの発達の謎を解く』（ちくま―プリマ―新書）などの一般書も発表。『学びとは何か―〈探究人〉になるために』（岩波新書）は、これからの学び・教育への理論的指針を与える本として各方面から注目を集めている。
+        </p>
+      </div>
+      <div class="dialog-speaker-buttonarea">
+        <a class="btn btn-main-inv btn-close" id="closeDialog04Button" href="javascript:void(0);"><p>閉じる</p></a>
+      </div>
+    </div>
+    <div id="speaker05Dialog" class="dialog dialog-speaker dialog-accent-02 dialog-hidden">
+      <div class="dialog-speaker-title">
+        <img class="dialog-speaker-image" src="img/page-speakers-image-hiroshima.jpg" alt="hiroshima">
+        <h3 class="dialog-speaker-name">広島県教育委員会</h3>
+      </div>
+      <div class="dialog-speaker-content">
+        <p class="dialog-speaker-content-title">
+        プロフィール
+        </p>
+        <hr>
+        <p class="mini-p dialog-speaker-content-sentence">
+        広島県では、親子のコミュニケーション、絵本の読み聞かせ、遊びからの学びなどを支援するために様々な取り組みをしています。<br/>
+        今回のABLEには、赤ちゃんが生まれた保護者のためにつくった絵本（今井むつみ監修）、親子コミュニケーションのための4コマ漫画、<br/>
+        親子で遊ぶ「遊びの広場」（広島版「究極のご近所パーティー」）などの取り組みを紹介してもらいます。<br/>
+        <a target="_blank" href="https://www.pref.hiroshima.lg.jp/site/oyakokomi/">保護者向け啓発資料のサイトはこちら</a><br/>
+<a target="_blank" href="https://www.pref.hiroshima.lg.jp/site/kyouiku/asobinohiroba-top.html">あそびのひろばのサイトはこちら</a>
+
+        </p>
+      </div>
+      <div class="dialog-speaker-buttonarea">
+        <a class="btn btn-main-inv btn-close" id="closeDialog05Button" href="javascript:void(0);"><p>閉じる</p></a>
+      </div>
+    </div>
+    <div id="topPage" class="page page-top">
       <div class="page-top-image-00"></div>
       <div class="page-top-image-01"></div>
       <div class="page-top-image-02"></div>
@@ -57,35 +171,35 @@
     <div id="speakersPage" class="page page-speakers">
       <h3 class="page-speakers-title">ゲスト・登壇者</h3>
       <div class="page-speakers-frame">
-        <a href="javacript:void(0);" class="page-speakers-speaker page-speakers-speaker-accent-02">
+        <a id="speaker01Button" href="javacript:void(0);" class="page-speakers-speaker page-speakers-speaker-accent-02">
           <img class="page-speakers-speaker-image" src="img/page-speakers-image-silven.jpg" alt="">
           <div class="page-speakers-speaker-title">
             <p class="page-speakers-speaker-title-name">マアリット・シルベン<br/>（Maarit Silvén）</p>
             <p class="page-speakers-speaker-title-affiliation">トゥルク大学教授</p>
           </div>
         </a>
-        <a href="javacript:void(0);" class="page-speakers-speaker page-speakers-speaker-accent-03">
+        <a id="speaker02Button" href="javacript:void(0);" class="page-speakers-speaker page-speakers-speaker-accent-03">
           <img class="page-speakers-speaker-image" src="img/page-speakers-image-uchida.jpg" alt="">
           <div class="page-speakers-speaker-title">
             <p class="page-speakers-speaker-title-name">内田伸子</p>
             <p class="page-speakers-speaker-title-affiliation">IPU・環太平洋大学教授</p>
           </div>
         </a>
-        <a href="javacript:void(0);" class="page-speakers-speaker page-speakers-speaker-accent-02">
+        <a id="speaker03Button" href="javacript:void(0);" class="page-speakers-speaker page-speakers-speaker-accent-02">
           <img class="page-speakers-speaker-image" src="img/page-speakers-image-saalbach.jpg" alt="">
           <div class="page-speakers-speaker-title">
             <p class="page-speakers-speaker-title-name">ヘンリク・ザールバッハ<br/>（Henrik Saalbach）</p>
             <p class="page-speakers-speaker-title-affiliation">ライプチヒ大学教授</p>
           </div>
         </a>
-        <a href="javacript:void(0);" class="page-speakers-speaker page-speakers-speaker-accent-03">
+        <a id="speaker04Button" href="javacript:void(0);" class="page-speakers-speaker page-speakers-speaker-accent-03">
           <img class="page-speakers-speaker-image" src="img/page-speakers-image-imai.jpg" alt="">
           <div class="page-speakers-speaker-title">
             <p class="page-speakers-speaker-title-name">今井むつみ</p>
             <p class="page-speakers-speaker-title-affiliation">慶應義塾大学教授</p>
           </div>
         </a>
-        <a href="javacript:void(0);" class="page-speakers-speaker page-speakers-speaker-accent-02">
+        <a id="speaker05Button" href="javacript:void(0);" class="page-speakers-speaker page-speakers-speaker-accent-02">
           <img class="page-speakers-speaker-image" src="img/page-speakers-image-hiroshima.jpg" alt="">
           <div class="page-speakers-speaker-title">
             <p class="page-speakers-speaker-title-name">広島県教育委員会</p>
